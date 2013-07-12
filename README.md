@@ -1,3 +1,3 @@
-fund_github
+funds_github
 ===========
 Can you read me?
