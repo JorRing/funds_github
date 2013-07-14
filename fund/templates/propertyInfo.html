@@ -1,0 +1,54 @@
+﻿<html>
+<head>
+
+</head>
+
+<body>
+
+	<p><strong>资产基本信息</strong></p>
+	<p>Fund Code:<input name='tID' type="text" id='tID' value={{ass.tID}}></p>
+	<p>Fund Name:<input name='aName' type="text" id='aName' value={{ass.aName}}></p>
+	<p>Fund Type<input name='aClass' type="text" id='aClass' value={{ass.aClass}}></p>
+	<p>Transaction Market:<input name='aMarket' type="text" id='aMarket' value={{ass.aMarket}}></p>
+	<p>Currency:<input name='currency' type="text" id='currency' value={{ass.currency}}></p>
+	<p>Lot Price:<input name='lotSize' type="text" id='lotSize' value={{ass.lotSize}}></p>
+	<p>Last Day Closing Price:<input name='pPrice' type="text" id='pPrice' value={{ass.pPrice}}></p>
+	<p>Today Closing Price:<input name='tPrice' type="text" id='tPrice' value={{ass.tPrice}}></p>
+</body>
+</html>
+
+<body>
+	<div>
+		<form action="/editSave/{{trans.id}}" method="GET" accept-charset="utf-8">
+			<fieldset>
+				<legend><span>资产基本信息</span></legend>
+				<div>
+					<span>Fund Code:</span><input name='tID' type="text" id='tID' value={{trans.tID}}>
+				</div>
+				<div>
+					<span>Account:</span><input name='tAccount' type="text" id='tAccount' value={{trans.tAccount}}>
+				</div>
+            	<div>
+					<span>Authorize Number:</span><input name='consignmentNo' type="text" id='consignmentNo' value={{trans.consignmentNo}}> 
+            	</div>
+				<div>
+					<span>Dealed Number:</span><input name='transactionNo' type="text" id='transactionNo' value={{trans.transactionNo}}>
+            	</div>
+				<div>
+					<span>Amount:</span><input name='transationAmount' type="text" id='transationAmount' value={{trans.transationAmount}}> 
+				</div>
+				<div>
+					<span>Price:</span><input name='transationPrice' type="text" id='transationPrice' value={{trans.transationPrice}}> 
+				</div>
+				<div>
+					<span>Start Date:</span><input name='tdate' type="text" id='tdate' placeholder="yyyy-mm-dd" value={{trans.tdate}}> 
+				</div>
+				<div>
+					<span>customerNumber:</span><input name='customerNumber' type="text" id='customerNumber' value={{trans.customerNumber}}> 
+				</div>
+            	<input type="submit" value="Confirm" id="submit">
+			</fieldset>
+		</form>
+		<button><a href="/index/">close</a></button>
+	</div>
+</body>

@@ -1,0 +1,18 @@
+﻿<html>
+<head>
+
+</head>
+
+<body>
+
+	<p><strong>资产基本信息</strong></p>
+	<p>Fund Code:<input name='tID' type="text" id='tID' value={{ass.tID}}></p>
+	<p>Fund Name:<input name='aName' type="text" id='aName' value={{ass.aName}}></p>
+	<p>Fund Type<input name='aClass' type="text" id='aClass' value={{ass.aClass}}></p>
+	<p>Transaction Market:<input name='aMarket' type="text" id='aMarket' value={{ass.aMarket}}></p>
+	<p>Currency:<input name='currency' type="text" id='currency' value={{ass.currency}}></p>
+	<p>Lot Price:<input name='lotSize' type="text" id='lotSize' value={{ass.lotSize}}></p>
+	<p>Last Day Closing Price:<input name='pPrice' type="text" id='pPrice' value={{ass.pPrice}}></p>
+	<p>Today Closing Price:<input name='tPrice' type="text" id='tPrice' value={{ass.tPrice}}></p>
+</body>
+</html>
